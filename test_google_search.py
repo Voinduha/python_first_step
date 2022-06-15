@@ -8,4 +8,5 @@ def test_positive():
 
 
 def test_negative():
+    browser.element('[name="q"]').should(be.blank).type('selene').press_enter()
     browser.element('[id="search"]').should(have.text('Selene is User-oriented Web UI browser tests in Python'))
